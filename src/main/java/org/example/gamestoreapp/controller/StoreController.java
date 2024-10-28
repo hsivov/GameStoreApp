@@ -82,7 +82,10 @@ public class StoreController {
         GameDTO gameById = gameService.getGameById(id)
                 .orElseThrow(() -> new GameNotFoundException("Game with ID " + id + " not found"));
 
+        boolean isInLibrary = libraryService.isGameInLibrary(id);
+
         model.addAttribute("game", gameById);
+        model.addAttribute("isInLibrary", isInLibrary);
 
         return "game-details";
     }

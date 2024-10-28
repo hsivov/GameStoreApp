@@ -9,6 +9,13 @@ body {
     background-color: #1b2838;
 }
 
+h5 {
+    background-color: #344654;
+    color: #beee11;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
 .main::before {
     content: '';
     position: fixed;
@@ -345,13 +352,6 @@ table td {
 
 .game-content h1 {
     text-align: center;
-}
-
-.game-content h5 {
-    background-color: #344654;
-    color: #beee11;
-    padding: 0.5rem;
-    font-size: 1rem;
 }
 
 .description {
