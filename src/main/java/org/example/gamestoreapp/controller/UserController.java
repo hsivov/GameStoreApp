@@ -47,12 +47,12 @@ public class UserController {
     @PostMapping("/shopping-cart/remove/{id}")
     public String shoppingCartRemove(@PathVariable Long id) {
         shoppingCartService.remove(id);
-        return "redirect:/shopping-cart";
+        return "redirect:/user/shopping-cart";
     }
 
     @PostMapping("/shopping-cart/remove-all")
     public String shoppingCartRemoveAll() {
         shoppingCartService.removeAll();
-        return "redirect:/shopping-cart";
+        return "redirect:/user/shopping-cart";
     }
 }

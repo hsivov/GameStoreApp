@@ -54,7 +54,7 @@ public class StoreController {
     public String addToCartFromDetails(@PathVariable("gameId") Long id) {
         shoppingCartService.addToCart(id);
 
-        return "redirect:/shopping-cart";
+        return "redirect:/user/shopping-cart";
     }
 
     @PostMapping("/store/add-to-cart/{gameId}")
